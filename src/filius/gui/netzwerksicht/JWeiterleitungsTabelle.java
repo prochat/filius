@@ -119,7 +119,8 @@ public class JWeiterleitungsTabelle extends JTable implements I18n {
 
 	public void aenderungenAnnehmen() {
 	  	Main.debug.println("INVOKED ("+this.hashCode()+") "+getClass()+", aenderungenAnnehmen()");
-		Vector<Object> tableData, rowData;
+		Vector<Vector> tableData;
+		Vector<Object> rowData;
 		Weiterleitungstabelle tabelle;
 		String[] routingEintrag;
 		String tmpString;
